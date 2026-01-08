@@ -4,14 +4,14 @@
 <head>
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge 0; url=/404EORROR">
+	<meta http-equiv="X-UA-Compatible" content="0; url=/contact">
 	<meta name="keywords" content="Site keywords here">
 	<meta name="description" content="">
 	<meta name='copyright' content=''>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Title -->
-	<title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
+	<title>Contact Us - Cathakala Studio</title>
 
 	<!-- Favicon -->
 	<link rel="icon" href="../assets/img/favicon.png">
@@ -48,22 +48,6 @@
 </head>
 
 <body>
-
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="loader">
-			<div class="loader-outter"></div>
-			<div class="loader-inner"></div>
-
-			<div class="indicator">
-				<svg width="16px" height="12px">
-					<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-					<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<!-- End Preloader -->
 	<!-- Header Area -->
 	<header class="header">
 		<!-- Header Inner -->
@@ -74,8 +58,7 @@
 						<div class="col-lg-3 col-md-3 col-12">
 							<!-- Start Logo -->
 							<div class="logo">
-								<a class="" href="index.html"><img src="../assets/img/logo.png" alt="#"
-										class="w-50"></a>
+								<a class="" href="/home"><img src="../assets/img/logo.png" alt="#" class="w-50"></a>
 							</div>
 							<!-- End Logo -->
 							<!-- Mobile Nav -->
@@ -87,17 +70,17 @@
 							<div class="main-menu">
 								<nav class="navigation">
 									<ul class="nav menu">
-										<li><a href="/home/">Home</a></li>
-										<li><a href="/service/">Services </a></li>
+										<li><a href="/home">Home</a></li>
+										<li><a href="/service">Services </a></li>
 										<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li><a href="../404.html">DPM FMIPA 2025</a></li>
+												<li><a href="../../404.html">DPM FMIPA 2025</a></li>
 												<li><a href="../404.html">Musma DPM FMIPA</a></li>
 												<li><a href="../404.html">PEMIRA LM FMIPA 2025</a></li>
 												<li><a href="../404.html">Mechafix</a></li>
 											</ul>
 										</li>
-										<li><a href="/contact/">Contact Us</a></li>
+										<li class="active"><a href="/contact">Contact Us</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -111,27 +94,125 @@
 	</header>
 	<!-- End Header Area -->
 
-	<!-- Error Page -->
-	<section class="error-page section">
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs overlay">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3 col-12">
-					<!-- Error Inner -->
-					<div class="error-inner">
-						<h1>404<span>Oop's sorry we can't find that page!</span></h1>
-						<p>Aenean eget sollicitudin lorem, et pretium felis. Nullam euismod diam libero, sed dapibus leo
-							laoreet ut. Suspendisse potenti. Phasellus urna lacus</p>
-						<form class="search-form">
-							<input placeholder="Search from Here" type="text">
-							<button class="btn" type="submit"><i class="fa fa-search"></i></button>
-						</form>
+			<div class="bread-inner">
+				<div class="row">
+					<div class="col-12">
+						<h2>Contact Us</h2>
+						<ul class="bread-list">
+							<li><a href="index.html">Home</a></li>
+							<li><i class="icofont-simple-right"></i></li>
+							<li class="active">Contact Us</li>
+						</ul>
 					</div>
-					<!--/ End Error Inner -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
+
+	<!-- Start Contact Us -->
+	<section class="contact-us section">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="contact-us-left">
+							<!--Start Google-map -->
+							<div id="myMap"></div>
+							<!--/End Google-map -->
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="contact-us-form">
+							<h2>Contact With Us</h2>
+							<p>If you have any questions please fell free to contact with us.</p>
+							<!-- Form -->
+							<form class="form" method="post" action="mail/mail.php">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" name="name" placeholder="Name" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="email" name="email" placeholder="Email" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" name="phone" placeholder="Phone" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" name="subject" placeholder="Subject" required="">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<textarea name="message" placeholder="Your Message" required=""></textarea>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group login-btn">
+											<button class="btn" type="submit">Send</button>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox-inline" for="2"><input name="news" id="2"
+													type="checkbox">Do you want to subscribe our Newsletter ?</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							<!--/ End Form -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contact-info">
+				<div class="row">
+					<!-- single-info -->
+					<div class="col-lg-4 col-12 ">
+						<div class="single-info">
+							<i class="icofont icofont-ui-call"></i>
+							<div class="content">
+								<h3>+(000) 1234 56789</h3>
+								<p>info@company.com</p>
+							</div>
+						</div>
+					</div>
+					<!--/End single-info -->
+					<!-- single-info -->
+					<div class="col-lg-4 col-12 ">
+						<div class="single-info">
+							<i class="icofont-google-map"></i>
+							<div class="content">
+								<h3>2 Fir e Brigade Road</h3>
+								<p>Chittagonj, Lakshmipur</p>
+							</div>
+						</div>
+					</div>
+					<!--/End single-info -->
+					<!-- single-info -->
+					<div class="col-lg-4 col-12 ">
+						<div class="single-info">
+							<i class="icofont icofont-wall-clock"></i>
+							<div class="content">
+								<h3>Mon - Sat: 8am - 5pm</h3>
+								<p>Sunday Closed</p>
+							</div>
+						</div>
+					</div>
+					<!--/End single-info -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--/ End Error Page -->
+	<!--/ End Contact Us -->
 
 	<!-- Footer Area -->
 	<footer id="footer" class="footer ">
@@ -244,12 +325,18 @@
 	<script src="../assets/js/wow.min.js"></script>
 	<!-- Magnific Popup JS -->
 	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Counter Up CDN JS -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<!-- Google Map API Key JS -->
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+	<!-- Gmaps JS -->
+	<script src="../assets/js/gmaps.min.js"></script>
+	<!-- Map Active JS -->
+	<script src="../assets/js/map-active.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<!-- Main JS -->
 	<script src="../assets/js/main.js"></script>
-	<!-- Counter Up CDN JS -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 </body>
 
 </html>
